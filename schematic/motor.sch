@@ -1,42 +1,108 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
+LIBS:74xgxx
 LIBS:74xx
-LIBS:cmos4000
+LIBS:ac-dc
+LIBS:actel
 LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
 LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
 LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
 LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
 LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:bd9e302efj
+LIBS:psmn1
 LIBS:tmc2130
+LIBS:schematic-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -466,28 +532,14 @@ Wire Wire Line
 Wire Wire Line
 	4050 3300 4300 3300
 Wire Wire Line
-	4600 5150 4700 5150
-Wire Wire Line
-	4700 5150 4800 5150
-Wire Wire Line
-	4800 5150 4950 5150
-Wire Wire Line
-	4950 5150 5150 5150
-Wire Wire Line
-	5150 5150 5700 5150
-Wire Wire Line
-	5700 5150 5800 5150
+	4600 5150 5800 5150
 Connection ~ 5700 5150
 Wire Wire Line
-	3400 4050 3700 4050
-Wire Wire Line
-	3700 4050 4300 4050
+	3400 4050 4300 4050
 Wire Wire Line
 	4300 3700 4050 3700
 Wire Wire Line
-	3400 3950 3550 3950
-Wire Wire Line
-	3550 3950 4300 3950
+	3400 3950 4300 3950
 Wire Wire Line
 	3550 3800 3550 3950
 Connection ~ 3550 3950
@@ -508,9 +560,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 4500 4200 4500
 Wire Wire Line
-	4200 4500 4200 4650
-Wire Wire Line
-	4200 4650 4200 4800
+	4200 4500 4200 4800
 Wire Wire Line
 	4600 5150 4600 5300
 Connection ~ 4600 5150
@@ -521,11 +571,7 @@ Wire Wire Line
 Wire Wire Line
 	5550 2250 5550 2350
 Wire Wire Line
-	5400 1950 5550 1950
-Wire Wire Line
-	5550 1950 5800 1950
-Wire Wire Line
-	5800 1950 6050 1950
+	5400 1950 6050 1950
 Wire Wire Line
 	5800 1950 5800 2350
 Wire Wire Line
@@ -534,9 +580,7 @@ Connection ~ 5800 2350
 Wire Wire Line
 	4000 2700 4000 2800
 Wire Wire Line
-	4000 2800 4200 2800
-Wire Wire Line
-	4200 2800 4300 2800
+	4000 2800 4300 2800
 Wire Wire Line
 	4200 2700 4200 2800
 Connection ~ 4200 2800
@@ -551,9 +595,7 @@ Wire Wire Line
 	5400 2350 5400 1950
 Connection ~ 5550 1950
 Wire Wire Line
-	5250 1700 5250 1750
-Wire Wire Line
-	5250 1750 5250 2350
+	5250 1700 5250 2350
 Wire Wire Line
 	5700 1750 5800 1750
 Wire Wire Line
@@ -563,31 +605,21 @@ Connection ~ 5800 1950
 Wire Wire Line
 	6250 2150 6250 2050
 Wire Wire Line
-	6250 2050 6550 2050
-Wire Wire Line
-	6550 2050 6850 2050
+	6250 2050 6850 2050
 Connection ~ 6550 2050
 Wire Wire Line
-	6250 1750 6550 1750
-Wire Wire Line
-	6550 1750 6850 1750
+	6250 1750 6850 1750
 Connection ~ 6550 1750
 Wire Wire Line
 	6250 1750 6250 1700
 Connection ~ 6250 1750
 Connection ~ 6250 2050
 Wire Wire Line
-	6100 2800 7450 2800
+	6100 2800 7500 2800
 Wire Wire Line
-	7450 2800 7500 2800
+	6100 3000 7500 3000
 Wire Wire Line
-	6100 3000 7450 3000
-Wire Wire Line
-	7450 3000 7500 3000
-Wire Wire Line
-	7800 2800 7800 2900
-Wire Wire Line
-	7800 2900 7800 3000
+	7800 2800 7800 3000
 Wire Wire Line
 	8150 2600 7450 2600
 Wire Wire Line
@@ -608,13 +640,9 @@ Connection ~ 7800 2900
 Wire Wire Line
 	6200 2900 6100 2900
 Wire Wire Line
-	6200 2400 6200 2650
+	6200 2400 6200 2900
 Wire Wire Line
-	6200 2650 6200 2900
-Wire Wire Line
-	6500 2400 6500 2550
-Wire Wire Line
-	6500 2550 6500 2650
+	6500 2400 6500 2650
 Wire Wire Line
 	6650 2550 6500 2550
 Connection ~ 6500 2550
@@ -665,13 +693,9 @@ F 3 "" H 6650 3700 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	6200 3350 6200 3600
+	6200 3350 6200 3850
 Wire Wire Line
-	6200 3600 6200 3850
-Wire Wire Line
-	6500 3600 6500 3700
-Wire Wire Line
-	6500 3700 6500 3850
+	6500 3600 6500 3850
 Wire Wire Line
 	6650 3700 6500 3700
 Connection ~ 6500 3700
@@ -774,17 +798,11 @@ F 3 "" H 7850 3350 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	6100 3450 7450 3450
+	6100 3450 7500 3450
 Wire Wire Line
-	7450 3450 7500 3450
+	6100 3250 7500 3250
 Wire Wire Line
-	6100 3250 7450 3250
-Wire Wire Line
-	7450 3250 7500 3250
-Wire Wire Line
-	7800 3250 7800 3350
-Wire Wire Line
-	7800 3350 7800 3450
+	7800 3250 7800 3450
 Wire Wire Line
 	8150 3650 7450 3650
 Wire Wire Line
