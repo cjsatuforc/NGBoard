@@ -618,9 +618,9 @@ Wire Wire Line
 Wire Wire Line
 	9100 1250 9200 1250
 Text GLabel 8200 5650 2    60   Input ~ 0
-YD0
-Text GLabel 2750 4450 0    60   Input ~ 0
 YD1
+Text GLabel 2750 4450 0    60   Input ~ 0
+YD0
 Text GLabel 2750 4550 0    60   Output ~ 0
 YEN
 Text GLabel 9100 2750 0    60   Input ~ 0
