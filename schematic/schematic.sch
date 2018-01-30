@@ -595,11 +595,11 @@ Wire Wire Line
 	1500 5300 1600 5300
 Text GLabel 9100 1600 0    60   Input ~ 0
 YSTEP
-Text GLabel 1950 4200 0    60   Output ~ 0
+Text GLabel 2750 4750 0    60   Output ~ 0
 YSTEP
 Wire Wire Line
 	9100 1600 9200 1600
-Text GLabel 1950 4050 0    60   Output ~ 0
+Text GLabel 2750 4650 0    60   Output ~ 0
 YDIR
 Text GLabel 9100 1700 0    60   Input ~ 0
 YDIR
@@ -617,11 +617,11 @@ Wire Wire Line
 	9100 1350 9200 1350
 Wire Wire Line
 	9100 1250 9200 1250
-Text GLabel 1750 4350 2    60   Input ~ 0
+Text GLabel 8200 5650 2    60   Input ~ 0
 YD0
-Text GLabel 2150 3850 2    60   Input ~ 0
+Text GLabel 2750 4450 0    60   Input ~ 0
 YD1
-Text GLabel 2150 3750 2    60   Output ~ 0
+Text GLabel 2750 4550 0    60   Output ~ 0
 YEN
 Text GLabel 9100 2750 0    60   Input ~ 0
 XEN
@@ -679,25 +679,25 @@ Wire Wire Line
 	9100 3750 9200 3750
 Wire Wire Line
 	9100 3850 9200 3850
-Text GLabel 2150 3650 2    60   Output ~ 0
+Text GLabel 8200 3250 2    60   Output ~ 0
 XSTEP
-Text GLabel 2150 3550 2    60   Output ~ 0
+Text GLabel 8200 3150 2    60   Output ~ 0
 XDIR
-Text GLabel 2150 3450 2    60   Input ~ 0
+Text GLabel 2750 4950 0    60   Input ~ 0
 XD0
-Text GLabel 2150 3350 2    60   Input ~ 0
+Text GLabel 2750 5050 0    60   Input ~ 0
 XD1
-Text GLabel 2000 3850 0    60   Output ~ 0
+Text GLabel 2750 5150 0    60   Output ~ 0
 XEN
-Text GLabel 2000 3750 0    60   Output ~ 0
+Text GLabel 8200 5450 2    60   Output ~ 0
 ZSTEP
-Text GLabel 2000 3650 0    60   Output ~ 0
+Text GLabel 8200 2650 2    60   Output ~ 0
 ZDIR
-Text GLabel 2000 3550 0    60   Input ~ 0
+Text GLabel 8200 2350 2    60   Input ~ 0
 ZD0
-Text GLabel 2000 3450 0    60   Input ~ 0
+Text GLabel 8200 2450 2    60   Input ~ 0
 ZD1
-Text GLabel 2000 3350 0    60   Output ~ 0
+Text GLabel 8200 2550 2    60   Output ~ 0
 ZEN
 Text GLabel 2750 2750 0    60   Output ~ 0
 ESTEP
@@ -831,11 +831,11 @@ Wire Wire Line
 	8100 4150 8200 4150
 Wire Wire Line
 	8100 4250 8200 4250
-Text GLabel 2150 4300 2    60   Output ~ 0
+Text GLabel 2750 4850 0    60   Output ~ 0
 YSS
-Text GLabel 2150 4200 2    60   Output ~ 0
+Text GLabel 8200 3350 2    60   Output ~ 0
 XSS
-Text GLabel 2150 4100 2    60   Output ~ 0
+Text GLabel 8200 5550 2    60   Output ~ 0
 ZSS
 Text GLabel 2750 2850 0    60   Output ~ 0
 ESS
@@ -1046,4 +1046,40 @@ Wire Wire Line
 	8200 3550 8100 3550
 Wire Wire Line
 	8100 3450 8200 3450
+Wire Wire Line
+	8100 3350 8200 3350
+Wire Wire Line
+	8200 3250 8100 3250
+Wire Wire Line
+	8200 3150 8100 3150
+Wire Wire Line
+	2750 5150 2900 5150
+Wire Wire Line
+	2750 5050 2900 5050
+Wire Wire Line
+	2750 4950 2900 4950
+Wire Wire Line
+	2750 4850 2900 4850
+Wire Wire Line
+	2750 4750 2900 4750
+Wire Wire Line
+	2750 4650 2900 4650
+Wire Wire Line
+	2750 4550 2900 4550
+Wire Wire Line
+	2750 4450 2900 4450
+Wire Wire Line
+	8100 5650 8200 5650
+Wire Wire Line
+	8100 5550 8200 5550
+Wire Wire Line
+	8100 5450 8200 5450
+Wire Wire Line
+	8100 2650 8200 2650
+Wire Wire Line
+	8100 2550 8200 2550
+Wire Wire Line
+	8100 2350 8200 2350
+Wire Wire Line
+	8100 2450 8200 2450
 $EndSCHEMATC
