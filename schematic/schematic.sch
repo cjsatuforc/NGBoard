@@ -257,18 +257,18 @@ F7 "BED" I R 2050 6450 60
 F8 "EXT-PWM" I R 2050 5750 60 
 $EndSheet
 $Sheet
-S 4550 6800 1000 650 
+S 5300 6800 1000 650 
 U 59ECE985
 F0 "Sensors" 60
 F1 "sensors.sch" 60
-F2 "THERM0" O L 4550 6900 60 
-F3 "THERM1" O L 4550 7000 60 
-F4 "THERM2" O L 4550 7100 60 
-F5 "XMIN" O R 5550 6900 60 
-F6 "YMIN" O R 5550 7000 60 
-F7 "ZMIN" O R 5550 7100 60 
-F8 "ZTHERM" O R 5550 7250 60 
-F9 "ZPROBE" O R 5550 7350 60 
+F2 "THERM0" O L 5300 6900 60 
+F3 "THERM1" O L 5300 7000 60 
+F4 "THERM2" O L 5300 7100 60 
+F5 "XMIN" O R 6300 6900 60 
+F6 "YMIN" O R 6300 7000 60 
+F7 "ZMIN" O R 6300 7100 60 
+F8 "ZTHERM" O R 6300 7250 60 
+F9 "ZPROBE" O R 6300 7350 60 
 $EndSheet
 $Sheet
 S 9200 5700 1000 500 
@@ -865,22 +865,22 @@ Text GLabel 8200 1750 2    60   Input ~ 0
 THERM2
 Text GLabel 8200 1850 2    60   Input ~ 0
 THERM3
-Text GLabel 4450 6900 0    60   Output ~ 0
+Text GLabel 5200 6900 0    60   Output ~ 0
 THERM0
-Text GLabel 4450 7000 0    60   Output ~ 0
+Text GLabel 5200 7000 0    60   Output ~ 0
 THERM1
-Text GLabel 4450 7100 0    60   Output ~ 0
+Text GLabel 5200 7100 0    60   Output ~ 0
 THERM2
-Text GLabel 5650 7250 2    60   Output ~ 0
+Text GLabel 6400 7250 2    60   Output ~ 0
 THERM3
 Wire Wire Line
-	4450 6900 4550 6900
+	5200 6900 5300 6900
 Wire Wire Line
-	4450 7000 4550 7000
+	5200 7000 5300 7000
 Wire Wire Line
-	4450 7100 4550 7100
+	5200 7100 5300 7100
 Wire Wire Line
-	5650 7250 5550 7250
+	6400 7250 6300 7250
 Wire Wire Line
 	8100 1550 8200 1550
 Wire Wire Line
@@ -897,22 +897,22 @@ Text GLabel 8200 4650 2    60   Input ~ 0
 ZEND
 Text GLabel 8200 4750 2    60   Input ~ 0
 ZSTOP
-Text GLabel 5650 6900 2    60   Output ~ 0
+Text GLabel 6400 6900 2    60   Output ~ 0
 XEND
-Text GLabel 5650 7000 2    60   Output ~ 0
+Text GLabel 6400 7000 2    60   Output ~ 0
 YEND
-Text GLabel 5650 7100 2    60   Output ~ 0
+Text GLabel 6400 7100 2    60   Output ~ 0
 ZEND
-Text GLabel 5650 7350 2    60   Output ~ 0
+Text GLabel 6400 7350 2    60   Output ~ 0
 ZPROBE
 Wire Wire Line
-	5550 6900 5650 6900
+	6300 6900 6400 6900
 Wire Wire Line
-	5550 7000 5650 7000
+	6300 7000 6400 7000
 Wire Wire Line
-	5550 7100 5650 7100
+	6300 7100 6400 7100
 Wire Wire Line
-	5550 7350 5650 7350
+	6300 7350 6400 7350
 $Comp
 L Conn_01x04 J4
 U 1 1 59E8C878
@@ -1082,4 +1082,186 @@ Wire Wire Line
 	8100 2350 8200 2350
 Wire Wire Line
 	8100 2450 8200 2450
+$Comp
+L Conn_02x05_Odd_Even J20
+U 1 1 5A71A41A
+P 3100 6800
+F 0 "J20" H 3150 7100 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 3150 6500 50  0000 C CNN
+F 2 "Connectors:IDC_Header_Straight_10pins" H 3100 6800 50  0001 C CNN
+F 3 "" H 3100 6800 50  0001 C CNN
+	1    3100 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Conn_02x05_Odd_Even J19
+U 1 1 5A71A6D7
+P 3000 7450
+F 0 "J19" H 3050 7750 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 3050 7150 50  0000 C CNN
+F 2 "Connectors:IDC_Header_Straight_10pins" H 3000 7450 50  0001 C CNN
+F 3 "" H 3000 7450 50  0001 C CNN
+	1    3000 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR08
+U 1 1 5A71CAE9
+P 2750 6550
+F 0 "#PWR08" H 2750 6400 50  0001 C CNN
+F 1 "+5V" H 2750 6690 50  0000 C CNN
+F 2 "" H 2750 6550 50  0001 C CNN
+F 3 "" H 2750 6550 50  0001 C CNN
+	1    2750 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 5A71CE27
+P 3350 6550
+F 0 "#PWR09" H 3350 6300 50  0001 C CNN
+F 1 "GND" H 3350 6400 50  0000 C CNN
+F 2 "" H 3350 6550 50  0001 C CNN
+F 3 "" H 3350 6550 50  0001 C CNN
+	1    3350 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 6600 3350 6600
+Wire Wire Line
+	3350 6600 3350 6550
+Wire Wire Line
+	2800 6600 2750 6600
+Wire Wire Line
+	2750 6600 2750 6550
+Text GLabel 2700 7250 0    60   Input ~ 0
+SDMISO
+Text GLabel 3400 7250 2    60   Input ~ 0
+SDCLK
+Text GLabel 3400 7350 2    60   Input ~ 0
+SDSS
+Text GLabel 3400 7450 2    60   Input ~ 0
+SDMOSI
+Text GLabel 3400 7550 2    60   Input ~ 0
+RESET
+Text GLabel 2700 7550 0    60   Input ~ 0
+SDDETECT
+Text GLabel 2700 6700 0    60   Input ~ 0
+LCD7
+Text GLabel 2700 6800 0    60   Input ~ 0
+LCD5
+Text GLabel 2700 6900 0    60   Input ~ 0
+LCDRS
+Text GLabel 3400 6700 2    60   Input ~ 0
+LCD6
+Text GLabel 3400 6800 2    60   Input ~ 0
+LCD4
+Text GLabel 3400 6900 2    60   Input ~ 0
+LCDE
+Text GLabel 3400 7000 2    60   Input ~ 0
+BEEP
+Text GLabel 2700 7000 0    60   Input ~ 0
+ENC1
+Text GLabel 2700 7350 0    60   Input ~ 0
+ENC2
+Text GLabel 2700 7450 0    60   Input ~ 0
+ENC3
+Wire Wire Line
+	2700 6700 2800 6700
+Wire Wire Line
+	2700 6800 2800 6800
+Wire Wire Line
+	2700 6900 2800 6900
+Wire Wire Line
+	2700 7000 2800 7000
+Wire Wire Line
+	3300 7000 3400 7000
+Wire Wire Line
+	3300 6900 3400 6900
+Wire Wire Line
+	3300 6800 3400 6800
+Wire Wire Line
+	3300 6700 3400 6700
+Wire Wire Line
+	2700 7250 2800 7250
+Wire Wire Line
+	2700 7350 2800 7350
+Wire Wire Line
+	2700 7450 2800 7450
+Wire Wire Line
+	2700 7550 2800 7550
+Wire Wire Line
+	3300 7250 3400 7250
+Wire Wire Line
+	3300 7350 3400 7350
+Wire Wire Line
+	3300 7450 3400 7450
+Wire Wire Line
+	3300 7550 3400 7550
+NoConn ~ 3300 7650
+NoConn ~ 2800 7650
+Text GLabel 2800 3950 0    60   Input ~ 0
+SDCLK
+Text GLabel 2800 4050 0    60   Input ~ 0
+SDMISO
+Text GLabel 2800 4150 0    60   Input ~ 0
+SDMOSI
+Wire Wire Line
+	2900 3950 2800 3950
+Wire Wire Line
+	2800 4050 2900 4050
+Wire Wire Line
+	2900 4150 2800 4150
+Text GLabel 2800 3850 0    60   Input ~ 0
+SDSS
+Wire Wire Line
+	2800 3850 2900 3850
+Text GLabel 2800 3750 0    60   Input ~ 0
+SDDETECT
+Text GLabel 2800 3650 0    60   Input ~ 0
+RESET
+Text GLabel 8200 3850 2    60   Input ~ 0
+ENC2
+Text GLabel 2800 4250 0    60   Input ~ 0
+ENC3
+Wire Wire Line
+	8100 3850 8200 3850
+Wire Wire Line
+	2800 4250 2900 4250
+Wire Wire Line
+	2800 3650 2900 3650
+Wire Wire Line
+	2800 3750 2900 3750
+Text GLabel 2800 5250 0    60   Input ~ 0
+LCD4
+Text GLabel 2800 5350 0    60   Input ~ 0
+LCD5
+Text GLabel 2800 5450 0    60   Input ~ 0
+LCD6
+Text GLabel 2800 5550 0    60   Input ~ 0
+LCD7
+Text GLabel 2800 5650 0    60   Input ~ 0
+LCDRS
+Text GLabel 2800 5750 0    60   Input ~ 0
+LCDE
+Text GLabel 2800 5950 0    60   Input ~ 0
+ENC1
+Text GLabel 2800 5850 0    60   Input ~ 0
+BEEP
+Wire Wire Line
+	2800 5250 2900 5250
+Wire Wire Line
+	2800 5350 2900 5350
+Wire Wire Line
+	2800 5450 2900 5450
+Wire Wire Line
+	2800 5550 2900 5550
+Wire Wire Line
+	2800 5650 2900 5650
+Wire Wire Line
+	2800 5750 2900 5750
+Wire Wire Line
+	2800 5850 2900 5850
+Wire Wire Line
+	2800 5950 2900 5950
 $EndSCHEMATC
