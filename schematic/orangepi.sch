@@ -199,14 +199,25 @@ Wire Wire Line
 Connection ~ 6100 3200
 Text HLabel 5200 3600 0    60   Output ~ 0
 BOOT0
-Text HLabel 5200 3700 0    60   Output ~ 0
-BOOT1
-Wire Wire Line
-	5500 3700 5200 3700
 Wire Wire Line
 	5500 3600 5200 3600
 Text HLabel 5200 3800 0    60   Output ~ 0
 RST
 Wire Wire Line
 	5500 3800 5200 3800
+NoConn ~ 5500 3100
+NoConn ~ 5500 3200
+NoConn ~ 5500 3300
+NoConn ~ 5500 3400
+NoConn ~ 5500 3700
+NoConn ~ 5500 3900
+NoConn ~ 5500 4000
+NoConn ~ 5500 4100
+NoConn ~ 5500 4200
+NoConn ~ 6000 3600
+NoConn ~ 6000 3800
+NoConn ~ 6000 3900
+NoConn ~ 6000 4100
+NoConn ~ 6000 4200
+NoConn ~ 6000 4300
 $EndSCHEMATC

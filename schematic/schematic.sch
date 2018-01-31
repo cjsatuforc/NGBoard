@@ -394,8 +394,6 @@ F 3 "" H 2350 2150 50  0001 C CNN
 	1    2350 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 8650 3050 2    60   Input ~ 0
-BOOT1
 $Comp
 L R R2
 U 1 1 59F2E720
@@ -483,8 +481,6 @@ F6 "RST" O R 1500 5300 60
 $EndSheet
 Text GLabel 1600 5100 2    60   Input ~ 0
 BOOT0
-Text GLabel 1600 5200 2    60   Input ~ 0
-BOOT1
 Text GLabel 1600 4850 2    60   Output ~ 0
 RX
 Text GLabel 1600 4950 2    60   Input ~ 0
@@ -566,9 +562,6 @@ Wire Wire Line
 Connection ~ 2450 2150
 Connection ~ 2350 2150
 Wire Wire Line
-	8100 3050 8650 3050
-Connection ~ 8550 3050
-Wire Wire Line
 	1700 1150 2900 1150
 Wire Wire Line
 	1700 1150 1700 950 
@@ -583,8 +576,6 @@ Wire Wire Line
 	8100 2050 8150 2050
 Wire Wire Line
 	8100 2150 8150 2150
-Wire Wire Line
-	1500 5200 1600 5200
 Wire Wire Line
 	1500 5100 1600 5100
 Wire Wire Line
@@ -735,22 +726,16 @@ Wire Wire Line
 	2050 6150 2150 6150
 Wire Wire Line
 	2050 6250 2150 6250
-Text GLabel 8200 1150 2    60   Output ~ 0
+Text GLabel 8200 1450 2    60   Output ~ 0
 BPWM
 Text GLabel 8200 1250 2    60   Output ~ 0
 EPWM
-Text GLabel 8200 1350 2    60   Output ~ 0
+Text GLabel 8200 1150 2    60   Output ~ 0
 F0PWM
-Text GLabel 8200 1450 2    60   Output ~ 0
+Text GLabel 8200 1350 2    60   Output ~ 0
 F1PWM
 Wire Wire Line
-	8100 1150 8200 1150
-Wire Wire Line
 	8100 1250 8200 1250
-Wire Wire Line
-	8100 1350 8200 1350
-Wire Wire Line
-	8100 1450 8200 1450
 Text GLabel 9100 800  0    60   Input ~ 0
 SCK
 Text GLabel 9100 900  0    60   Input ~ 0
@@ -881,13 +866,13 @@ Wire Wire Line
 	8100 1750 8200 1750
 Wire Wire Line
 	8100 1850 8200 1850
-Text GLabel 8200 4450 2    60   Input ~ 0
+Text GLabel 2800 3150 0    60   Input ~ 0
 XEND
-Text GLabel 8200 4550 2    60   Input ~ 0
+Text GLabel 2800 3050 0    60   Input ~ 0
 YEND
-Text GLabel 8200 4650 2    60   Input ~ 0
+Text GLabel 2800 2950 0    60   Input ~ 0
 ZEND
-Text GLabel 8200 4750 2    60   Input ~ 0
+Text GLabel 2800 3250 0    60   Input ~ 0
 ZSTOP
 Text GLabel 6400 6900 2    60   Output ~ 0
 XEND
@@ -1264,4 +1249,20 @@ Wire Wire Line
 	8100 5250 8700 5250
 Wire Wire Line
 	8700 5250 8700 5800
+Wire Wire Line
+	2800 2950 2900 2950
+Wire Wire Line
+	2800 3050 2900 3050
+Wire Wire Line
+	2800 3150 2900 3150
+Wire Wire Line
+	2800 3250 2900 3250
+Wire Wire Line
+	8100 1450 8200 1450
+Wire Wire Line
+	8100 1350 8200 1350
+Wire Wire Line
+	8100 1150 8200 1150
+Wire Wire Line
+	8100 3050 8550 3050
 $EndSCHEMATC
