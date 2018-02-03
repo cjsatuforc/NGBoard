@@ -872,8 +872,6 @@ Text GLabel 2800 3050 0    60   Input ~ 0
 YEND
 Text GLabel 2800 2950 0    60   Input ~ 0
 ZEND
-Text GLabel 2800 3250 0    60   Input ~ 0
-ZSTOP
 Text GLabel 6400 6900 2    60   Output ~ 0
 XEND
 Text GLabel 6400 7000 2    60   Output ~ 0
@@ -1256,8 +1254,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 3150 2900 3150
 Wire Wire Line
-	2800 3250 2900 3250
-Wire Wire Line
 	8100 1450 8200 1450
 Wire Wire Line
 	8100 1350 8200 1350
@@ -1265,4 +1261,105 @@ Wire Wire Line
 	8100 1150 8200 1150
 Wire Wire Line
 	8100 3050 8550 3050
+$Comp
+L Conn_02x05_Odd_Even J21
+U 1 1 5A762BC9
+P 4350 7450
+F 0 "J21" H 4400 7750 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 4400 7150 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 4350 7450 50  0001 C CNN
+F 3 "" H 4350 7450 50  0001 C CNN
+	1    4350 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR010
+U 1 1 5A764DEA
+P 4150 7150
+F 0 "#PWR010" H 4150 7000 50  0001 C CNN
+F 1 "+3.3V" H 4150 7290 50  0000 C CNN
+F 2 "" H 4150 7150 50  0001 C CNN
+F 3 "" H 4150 7150 50  0001 C CNN
+	1    4150 7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR011
+U 1 1 5A76523A
+P 4650 7150
+F 0 "#PWR011" H 4650 6900 50  0001 C CNN
+F 1 "GND" H 4650 7000 50  0000 C CNN
+F 2 "" H 4650 7150 50  0001 C CNN
+F 3 "" H 4650 7150 50  0001 C CNN
+	1    4650 7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4150 7150 4150 7250
+Wire Wire Line
+	4650 7150 4650 7250
+Text GLabel 4100 7350 0    60   Input ~ 0
+GP1
+Text GLabel 4700 7350 2    60   Input ~ 0
+GP2
+Text GLabel 4100 7450 0    60   Input ~ 0
+GP3
+Text GLabel 4100 7550 0    60   Input ~ 0
+GP5
+Text GLabel 4100 7650 0    60   Input ~ 0
+GP7
+Text GLabel 4700 7450 2    60   Input ~ 0
+GP4
+Text GLabel 4700 7550 2    60   Input ~ 0
+GP6
+Text GLabel 4700 7650 2    60   Input ~ 0
+GP8
+Wire Wire Line
+	4100 7350 4150 7350
+Wire Wire Line
+	4100 7450 4150 7450
+Wire Wire Line
+	4100 7550 4150 7550
+Wire Wire Line
+	4100 7650 4150 7650
+Wire Wire Line
+	4650 7350 4700 7350
+Wire Wire Line
+	4650 7450 4700 7450
+Wire Wire Line
+	4650 7550 4700 7550
+Wire Wire Line
+	4650 7650 4700 7650
+Text GLabel 2800 3250 0    60   Input ~ 0
+GP1
+Text GLabel 2800 3350 0    60   Input ~ 0
+GP2
+Text GLabel 8200 5750 2    60   Input ~ 0
+GP3
+Text GLabel 8200 5850 2    60   Input ~ 0
+GP4
+Text GLabel 8200 5950 2    60   Input ~ 0
+GP5
+Text GLabel 8200 4450 2    60   Input ~ 0
+GP6
+Text GLabel 8200 4550 2    60   Input ~ 0
+GP7
+Text GLabel 8200 4650 2    60   Input ~ 0
+GP8
+Wire Wire Line
+	8100 4450 8200 4450
+Wire Wire Line
+	8100 4550 8200 4550
+Wire Wire Line
+	8100 4650 8200 4650
+Wire Wire Line
+	8100 5750 8200 5750
+Wire Wire Line
+	8100 5850 8200 5850
+Wire Wire Line
+	8100 5950 8200 5950
+Wire Wire Line
+	2800 3250 2900 3250
+Wire Wire Line
+	2800 3350 2900 3350
 $EndSCHEMATC
