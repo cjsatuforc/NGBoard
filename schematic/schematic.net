@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /media/data/Git/NGBoard/schematic/schematic.sch)
-    (date "Sat 03 Feb 2018 08:53:19 PM CET")
+    (date "Sun 04 Feb 2018 03:24:05 PM CET")
     (tool "Eeschema 4.0.7+dfsg1-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1202,7 +1202,7 @@
       (tstamp 59EBB904))
     (comp (ref C93)
       (value 100nF)
-      (footprint Resistors_SMD:R_0603)
+      (footprint Capacitors_SMD:C_0603)
       (libsource (lib device) (part C))
       (sheetpath (names /Mosfets/) (tstamps /59EA5ED5/))
       (tstamp 59EBB948))
