@@ -113,21 +113,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Conn_02x13_Odd_Even J18
-U 1 1 59F4D38E
-P 5700 3700
-F 0 "J18" H 5750 4400 50  0000 C CNN
-F 1 "Conn_02x13_Odd_Even" H 5750 3000 50  0000 C CNN
-F 2 "Socket_Strips:Socket_Strip_Straight_2x13_Pitch2.54mm" H 5700 3700 50  0001 C CNN
-F 3 "" H 5700 3700 50  0001 C CNN
-	1    5700 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR0156
+L +5V #PWR157
 U 1 1 59F4D3CF
 P 6100 3000
-F 0 "#PWR0156" H 6100 2850 50  0001 C CNN
+F 0 "#PWR157" H 6100 2850 50  0001 C CNN
 F 1 "+5V" H 6100 3140 50  0000 C CNN
 F 2 "" H 6100 3000 50  0001 C CNN
 F 3 "" H 6100 3000 50  0001 C CNN
@@ -144,34 +133,18 @@ Connection ~ 6100 3100
 Wire Wire Line
 	6000 3300 6350 3300
 Wire Wire Line
-	6100 4500 6100 3300
-Wire Wire Line
-	6000 3700 6100 3700
-Connection ~ 6100 3700
-Wire Wire Line
-	6000 4000 6100 4000
-Connection ~ 6100 4000
-Wire Wire Line
 	5500 3500 5400 3500
-Wire Wire Line
-	5400 3500 5400 4500
-Wire Wire Line
-	5400 4500 6100 4500
-Wire Wire Line
-	5400 4300 5500 4300
-Connection ~ 5400 4300
 $Comp
-L GND #PWR0157
+L GND #PWR156
 U 1 1 59F4D42B
-P 5750 4500
-F 0 "#PWR0157" H 5750 4250 50  0001 C CNN
-F 1 "GND" H 5750 4350 50  0000 C CNN
-F 2 "" H 5750 4500 50  0001 C CNN
-F 3 "" H 5750 4500 50  0001 C CNN
-	1    5750 4500
+P 5750 3700
+F 0 "#PWR156" H 5750 3450 50  0001 C CNN
+F 1 "GND" H 5750 3550 50  0000 C CNN
+F 2 "" H 5750 3700 50  0001 C CNN
+F 3 "" H 5750 3700 50  0001 C CNN
+	1    5750 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 5750 4500
 Text HLabel 6250 3400 2    60   Output ~ 0
 TX
 Text HLabel 6250 3500 2    60   Input ~ 0
@@ -197,27 +170,32 @@ Wire Wire Line
 Wire Wire Line
 	6200 3000 6350 3000
 Connection ~ 6100 3200
-Text HLabel 5200 3600 0    60   Output ~ 0
+Text HLabel 5400 3200 0    60   Output ~ 0
 BOOT0
 Wire Wire Line
-	5500 3600 5200 3600
-Text HLabel 5200 3800 0    60   Output ~ 0
+	5500 3200 5400 3200
+Text HLabel 5400 3300 0    60   Output ~ 0
 RST
 Wire Wire Line
-	5500 3800 5200 3800
+	5500 3300 5400 3300
 NoConn ~ 5500 3100
-NoConn ~ 5500 3200
-NoConn ~ 5500 3300
 NoConn ~ 5500 3400
-NoConn ~ 5500 3700
-NoConn ~ 5500 3900
-NoConn ~ 5500 4000
-NoConn ~ 5500 4100
-NoConn ~ 5500 4200
-NoConn ~ 6000 3600
-NoConn ~ 6000 3800
-NoConn ~ 6000 3900
-NoConn ~ 6000 4100
-NoConn ~ 6000 4200
-NoConn ~ 6000 4300
+$Comp
+L Conn_02x05_Odd_Even J18
+U 1 1 5A77AA6E
+P 5700 3300
+F 0 "J18" H 5750 3600 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 5750 3000 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 5700 3300 50  0001 C CNN
+F 3 "" H 5700 3300 50  0001 C CNN
+	1    5700 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3500 5400 3700
+Wire Wire Line
+	6100 3300 6100 3700
+Wire Wire Line
+	6100 3700 5400 3700
+Connection ~ 5750 3700
 $EndSCHEMATC
