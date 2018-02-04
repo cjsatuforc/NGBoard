@@ -1269,7 +1269,7 @@ U 1 1 59EB0104
 P 8150 5500
 F 0 "L21" V 8100 5500 50  0000 C CNN
 F 1 "3.3uH" V 8225 5500 50  0000 C CNN
-F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 5500 50  0001 C CNN
+F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-60xx_HandSoldering" H 8150 5500 50  0001 C CNN
 F 3 "" H 8150 5500 50  0001 C CNN
 	1    8150 5500
 	0    -1   -1   0   
