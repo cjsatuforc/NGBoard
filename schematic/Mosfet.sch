@@ -1,6 +1,104 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos4000
+LIBS:cmos_ieee
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:device
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp
+LIBS:nxp_armmcu
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:power
+LIBS:powerint
+LIBS:Power_Management
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:bd9e302efj
+LIBS:psmn1
+LIBS:tmc2130
 LIBS:schematic-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -17,7 +115,7 @@ $EndDescr
 Text HLabel 1200 2650 0    60   Input ~ 0
 BED-PWM
 $Comp
-L Device:Q_NMOS_GDSD Q3
+L Q_NMOS_GDSD Q3
 U 1 1 59EA6010
 P 9300 1750
 F 0 "Q3" H 9500 1800 50  0000 L CNN
@@ -28,11 +126,9 @@ F 3 "" H 9300 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R34
+L R R34
 U 1 1 59EA6171
 P 8700 1750
-AR Path="/59EA6171" Ref="R34"  Part="1" 
-AR Path="/59EA5ED5/59EA6171" Ref="R34"  Part="1" 
 F 0 "R34" V 8780 1750 50  0000 C CNN
 F 1 "100" V 8700 1750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8630 1750 50  0001 C CNN
@@ -41,11 +137,9 @@ F 3 "" H 8700 1750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R36
+L R R36
 U 1 1 59EA61EE
 P 9100 1950
-AR Path="/59EA61EE" Ref="R36"  Part="1" 
-AR Path="/59EA5ED5/59EA61EE" Ref="R36"  Part="1" 
 F 0 "R36" V 9180 1950 50  0000 C CNN
 F 1 "100K" V 9100 1950 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9030 1950 50  0001 C CNN
@@ -54,11 +148,9 @@ F 3 "" H 9100 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R38
+L R R38
 U 1 1 59EA6210
 P 9400 900
-AR Path="/59EA6210" Ref="R38"  Part="1" 
-AR Path="/59EA5ED5/59EA6210" Ref="R38"  Part="1" 
 F 0 "R38" V 9480 900 50  0000 C CNN
 F 1 "1.8K" V 9400 900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9330 900 50  0001 C CNN
@@ -67,7 +159,7 @@ F 3 "" H 9400 900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D8
+L LED D8
 U 1 1 59EA629A
 P 9400 1300
 F 0 "D8" H 9400 1400 50  0000 C CNN
@@ -78,7 +170,7 @@ F 3 "" H 9400 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J9
+L Conn_01x03 J9
 U 1 1 59EA6367
 P 10650 1650
 F 0 "J9" H 10650 1850 50  0000 C CNN
@@ -106,10 +198,10 @@ Wire Wire Line
 Wire Wire Line
 	9400 1950 9400 2100
 $Comp
-L power:GND #PWR0119
+L GND #PWR119
 U 1 1 59EA915F
 P 9400 2100
-F 0 "#PWR0119" H 9400 1850 50  0001 C CNN
+F 0 "#PWR119" H 9400 1850 50  0001 C CNN
 F 1 "GND" H 9400 1950 50  0000 C CNN
 F 2 "" H 9400 2100 50  0001 C CNN
 F 3 "" H 9400 2100 50  0001 C CNN
@@ -122,12 +214,10 @@ FAN0-PWM
 Wire Wire Line
 	8350 1750 8550 1750
 $Comp
-L power:+12V #PWR118
+L +12V #PWR118
 U 1 1 59EBB7C2
 P 9400 750
-AR Path="/59EBB7C2" Ref="#PWR118"  Part="1" 
-AR Path="/59EA5ED5/59EBB7C2" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 9400 600 50  0001 C CNN
+F 0 "#PWR118" H 9400 600 50  0001 C CNN
 F 1 "+12V" H 9400 890 50  0000 C CNN
 F 2 "" H 9400 750 50  0001 C CNN
 F 3 "" H 9400 750 50  0001 C CNN
@@ -135,12 +225,10 @@ F 3 "" H 9400 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR126
+L +12V #PWR126
 U 1 1 59EBB7E0
 P 10350 1450
-AR Path="/59EBB7E0" Ref="#PWR126"  Part="1" 
-AR Path="/59EA5ED5/59EBB7E0" Ref="#PWR0126"  Part="1" 
-F 0 "#PWR0126" H 10350 1300 50  0001 C CNN
+F 0 "#PWR126" H 10350 1300 50  0001 C CNN
 F 1 "+12V" H 10350 1590 50  0000 C CNN
 F 2 "" H 10350 1450 50  0001 C CNN
 F 3 "" H 10350 1450 50  0001 C CNN
@@ -152,11 +240,9 @@ Wire Wire Line
 Wire Wire Line
 	10350 1650 10350 1450
 $Comp
-L Device:R R40
+L R R40
 U 1 1 59EBB878
 P 9450 2800
-AR Path="/59EBB878" Ref="R40"  Part="1" 
-AR Path="/59EA5ED5/59EBB878" Ref="R40"  Part="1" 
 F 0 "R40" V 9530 2800 50  0000 C CNN
 F 1 "1K" V 9450 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9380 2800 50  0001 C CNN
@@ -165,11 +251,9 @@ F 3 "" H 9450 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R42
+L R R42
 U 1 1 59EBB8DD
 P 9950 2800
-AR Path="/59EBB8DD" Ref="R42"  Part="1" 
-AR Path="/59EA5ED5/59EBB8DD" Ref="R42"  Part="1" 
 F 0 "R42" V 10030 2800 50  0000 C CNN
 F 1 "1K" V 9950 2800 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9880 2800 50  0001 C CNN
@@ -178,11 +262,9 @@ F 3 "" H 9950 2800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R44
+L R R44
 U 1 1 59EBB904
 P 10200 2550
-AR Path="/59EBB904" Ref="R44"  Part="1" 
-AR Path="/59EA5ED5/59EBB904" Ref="R44"  Part="1" 
 F 0 "R44" V 10280 2550 50  0000 C CNN
 F 1 "1.8K" V 10200 2550 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 10130 2550 50  0001 C CNN
@@ -191,11 +273,9 @@ F 3 "" H 10200 2550 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C93
+L C C93
 U 1 1 59EBB948
 P 9200 3050
-AR Path="/59EBB948" Ref="C93"  Part="1" 
-AR Path="/59EA5ED5/59EBB948" Ref="C93"  Part="1" 
 F 0 "C93" H 9225 3150 50  0000 L CNN
 F 1 "100nF" H 9225 2950 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 9238 2900 50  0001 C CNN
@@ -222,10 +302,10 @@ Wire Wire Line
 Wire Wire Line
 	9050 2800 9300 2800
 $Comp
-L power:GND #PWR0122
+L GND #PWR122
 U 1 1 59EBBD19
 P 9450 3350
-F 0 "#PWR0122" H 9450 3100 50  0001 C CNN
+F 0 "#PWR122" H 9450 3100 50  0001 C CNN
 F 1 "GND" H 9450 3200 50  0000 C CNN
 F 2 "" H 9450 3350 50  0001 C CNN
 F 3 "" H 9450 3350 50  0001 C CNN
@@ -239,10 +319,10 @@ Connection ~ 9200 2800
 Text HLabel 9050 2800 0    60   Output ~ 0
 TACH_0
 $Comp
-L power:+3.3V #PWR0124
+L +3.3V #PWR124
 U 1 1 59EBBF65
 P 9950 2300
-F 0 "#PWR0124" H 9950 2150 50  0001 C CNN
+F 0 "#PWR124" H 9950 2150 50  0001 C CNN
 F 1 "+3.3V" H 9950 2440 50  0000 C CNN
 F 2 "" H 9950 2300 50  0001 C CNN
 F 3 "" H 9950 2300 50  0001 C CNN
@@ -252,7 +332,7 @@ $EndComp
 Wire Wire Line
 	9950 2300 9950 2400
 $Comp
-L Device:Q_NMOS_GDSD Q4
+L Q_NMOS_GDSD Q4
 U 1 1 59EBE8E2
 P 9300 4700
 F 0 "Q4" H 9500 4750 50  0000 L CNN
@@ -263,11 +343,9 @@ F 3 "" H 9300 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R35
+L R R35
 U 1 1 59EBE8E8
 P 8700 4700
-AR Path="/59EBE8E8" Ref="R35"  Part="1" 
-AR Path="/59EA5ED5/59EBE8E8" Ref="R35"  Part="1" 
 F 0 "R35" V 8780 4700 50  0000 C CNN
 F 1 "100" V 8700 4700 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 8630 4700 50  0001 C CNN
@@ -276,11 +354,9 @@ F 3 "" H 8700 4700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R37
+L R R37
 U 1 1 59EBE8EE
 P 9100 4900
-AR Path="/59EBE8EE" Ref="R37"  Part="1" 
-AR Path="/59EA5ED5/59EBE8EE" Ref="R37"  Part="1" 
 F 0 "R37" V 9180 4900 50  0000 C CNN
 F 1 "100K" V 9100 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9030 4900 50  0001 C CNN
@@ -289,11 +365,9 @@ F 3 "" H 9100 4900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R39
+L R R39
 U 1 1 59EBE8F4
 P 9400 3850
-AR Path="/59EBE8F4" Ref="R39"  Part="1" 
-AR Path="/59EA5ED5/59EBE8F4" Ref="R39"  Part="1" 
 F 0 "R39" V 9480 3850 50  0000 C CNN
 F 1 "1.8K" V 9400 3850 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9330 3850 50  0001 C CNN
@@ -302,7 +376,7 @@ F 3 "" H 9400 3850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:LED D9
+L LED D9
 U 1 1 59EBE8FA
 P 9400 4250
 F 0 "D9" H 9400 4350 50  0000 C CNN
@@ -313,7 +387,7 @@ F 3 "" H 9400 4250 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x03 J10
+L Conn_01x03 J10
 U 1 1 59EBE900
 P 10650 4600
 F 0 "J10" H 10650 4800 50  0000 C CNN
@@ -341,10 +415,10 @@ Wire Wire Line
 Wire Wire Line
 	9400 4900 9400 5050
 $Comp
-L power:GND #PWR0121
+L GND #PWR121
 U 1 1 59EBE910
 P 9400 5050
-F 0 "#PWR0121" H 9400 4800 50  0001 C CNN
+F 0 "#PWR121" H 9400 4800 50  0001 C CNN
 F 1 "GND" H 9400 4900 50  0000 C CNN
 F 2 "" H 9400 5050 50  0001 C CNN
 F 3 "" H 9400 5050 50  0001 C CNN
@@ -357,12 +431,10 @@ FAN1-PWM
 Wire Wire Line
 	8350 4700 8550 4700
 $Comp
-L power:+12V #PWR120
+L +12V #PWR120
 U 1 1 59EBE919
 P 9400 3700
-AR Path="/59EBE919" Ref="#PWR120"  Part="1" 
-AR Path="/59EA5ED5/59EBE919" Ref="#PWR0120"  Part="1" 
-F 0 "#PWR0120" H 9400 3550 50  0001 C CNN
+F 0 "#PWR120" H 9400 3550 50  0001 C CNN
 F 1 "+12V" H 9400 3840 50  0000 C CNN
 F 2 "" H 9400 3700 50  0001 C CNN
 F 3 "" H 9400 3700 50  0001 C CNN
@@ -370,12 +442,10 @@ F 3 "" H 9400 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR127
+L +12V #PWR127
 U 1 1 59EBE91F
 P 10350 4400
-AR Path="/59EBE91F" Ref="#PWR127"  Part="1" 
-AR Path="/59EA5ED5/59EBE91F" Ref="#PWR0127"  Part="1" 
-F 0 "#PWR0127" H 10350 4250 50  0001 C CNN
+F 0 "#PWR127" H 10350 4250 50  0001 C CNN
 F 1 "+12V" H 10350 4540 50  0000 C CNN
 F 2 "" H 10350 4400 50  0001 C CNN
 F 3 "" H 10350 4400 50  0001 C CNN
@@ -387,11 +457,9 @@ Wire Wire Line
 Wire Wire Line
 	10350 4600 10350 4400
 $Comp
-L Device:R R41
+L R R41
 U 1 1 59EBE927
 P 9450 5750
-AR Path="/59EBE927" Ref="R41"  Part="1" 
-AR Path="/59EA5ED5/59EBE927" Ref="R41"  Part="1" 
 F 0 "R41" V 9530 5750 50  0000 C CNN
 F 1 "1K" V 9450 5750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9380 5750 50  0001 C CNN
@@ -400,11 +468,9 @@ F 3 "" H 9450 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R43
+L R R43
 U 1 1 59EBE92D
 P 9950 5750
-AR Path="/59EBE92D" Ref="R43"  Part="1" 
-AR Path="/59EA5ED5/59EBE92D" Ref="R43"  Part="1" 
 F 0 "R43" V 10030 5750 50  0000 C CNN
 F 1 "1K" V 9950 5750 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 9880 5750 50  0001 C CNN
@@ -413,11 +479,9 @@ F 3 "" H 9950 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R45
+L R R45
 U 1 1 59EBE933
 P 10200 5500
-AR Path="/59EBE933" Ref="R45"  Part="1" 
-AR Path="/59EA5ED5/59EBE933" Ref="R45"  Part="1" 
 F 0 "R45" V 10280 5500 50  0000 C CNN
 F 1 "1.8K" V 10200 5500 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 10130 5500 50  0001 C CNN
@@ -426,11 +490,9 @@ F 3 "" H 10200 5500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:C C94
+L C C94
 U 1 1 59EBE939
 P 9200 6000
-AR Path="/59EBE939" Ref="C94"  Part="1" 
-AR Path="/59EA5ED5/59EBE939" Ref="C94"  Part="1" 
 F 0 "C94" H 9225 6100 50  0000 L CNN
 F 1 "100nF" H 9225 5900 50  0000 L CNN
 F 2 "Capacitors_SMD:C_0603" H 9238 5850 50  0001 C CNN
@@ -459,10 +521,10 @@ Wire Wire Line
 Wire Wire Line
 	9050 5750 9300 5750
 $Comp
-L power:GND #PWR0123
+L GND #PWR123
 U 1 1 59EBE957
 P 9450 6300
-F 0 "#PWR0123" H 9450 6050 50  0001 C CNN
+F 0 "#PWR123" H 9450 6050 50  0001 C CNN
 F 1 "GND" H 9450 6150 50  0000 C CNN
 F 2 "" H 9450 6300 50  0001 C CNN
 F 3 "" H 9450 6300 50  0001 C CNN
@@ -476,10 +538,10 @@ Connection ~ 9200 5750
 Text HLabel 9050 5750 0    60   Output ~ 0
 TACH_1
 $Comp
-L power:+3.3V #PWR0125
+L +3.3V #PWR125
 U 1 1 59EBE961
 P 9950 5250
-F 0 "#PWR0125" H 9950 5100 50  0001 C CNN
+F 0 "#PWR125" H 9950 5100 50  0001 C CNN
 F 1 "+3.3V" H 9950 5390 50  0000 C CNN
 F 2 "" H 9950 5250 50  0001 C CNN
 F 3 "" H 9950 5250 50  0001 C CNN
@@ -491,7 +553,7 @@ Wire Wire Line
 Text HLabel 1700 2200 0    60   Input ~ 0
 BED
 $Comp
-L psmn1:PSMN1 Q1
+L PSMN1 Q1
 U 1 1 59EC1D43
 P 2250 2650
 F 0 "Q1" H 2450 2700 50  0000 L CNN
@@ -502,7 +564,7 @@ F 3 "" H 2250 2650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D6
+L LED D6
 U 1 1 59EC25C7
 P 2350 2050
 F 0 "D6" H 2350 2150 50  0000 C CNN
@@ -513,11 +575,9 @@ F 3 "" H 2350 2050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R32
+L R R32
 U 1 1 59EC2646
 P 2350 1650
-AR Path="/59EC2646" Ref="R32"  Part="1" 
-AR Path="/59EA5ED5/59EC2646" Ref="R32"  Part="1" 
 F 0 "R32" V 2430 1650 50  0000 C CNN
 F 1 "1.8K" V 2350 1650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2280 1650 50  0001 C CNN
@@ -526,10 +586,10 @@ F 3 "" H 2350 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR0114
+L +24V #PWR114
 U 1 1 59EC2711
 P 2350 1400
-F 0 "#PWR0114" H 2350 1250 50  0001 C CNN
+F 0 "#PWR114" H 2350 1250 50  0001 C CNN
 F 1 "+24V" H 2350 1540 50  0000 C CNN
 F 2 "" H 2350 1400 50  0001 C CNN
 F 3 "" H 2350 1400 50  0001 C CNN
@@ -537,7 +597,7 @@ F 3 "" H 2350 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D4
+L D_Schottky D4
 U 1 1 59EC2791
 P 2100 1850
 F 0 "D4" H 2100 1950 50  0000 C CNN
@@ -567,10 +627,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 2950 2350 2900
 $Comp
-L power:GND #PWR0115
+L GND #PWR115
 U 1 1 59EC2B99
 P 2350 2950
-F 0 "#PWR0115" H 2350 2700 50  0001 C CNN
+F 0 "#PWR115" H 2350 2700 50  0001 C CNN
 F 1 "GND" H 2350 2800 50  0000 C CNN
 F 2 "" H 2350 2950 50  0001 C CNN
 F 3 "" H 2350 2950 50  0001 C CNN
@@ -578,11 +638,9 @@ F 3 "" H 2350 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R28
+L R R28
 U 1 1 59EC2F12
 P 1650 2650
-AR Path="/59EC2F12" Ref="R28"  Part="1" 
-AR Path="/59EA5ED5/59EC2F12" Ref="R28"  Part="1" 
 F 0 "R28" V 1730 2650 50  0000 C CNN
 F 1 "100" V 1650 2650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1580 2650 50  0001 C CNN
@@ -591,11 +649,9 @@ F 3 "" H 1650 2650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R30
+L R R30
 U 1 1 59EC2FA6
 P 2100 2900
-AR Path="/59EC2FA6" Ref="R30"  Part="1" 
-AR Path="/59EA5ED5/59EC2FA6" Ref="R30"  Part="1" 
 F 0 "R30" V 2180 2900 50  0000 C CNN
 F 1 "100K" V 2100 2900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2030 2900 50  0001 C CNN
@@ -614,7 +670,7 @@ Connection ~ 1950 2650
 Text HLabel 1200 4650 0    60   Input ~ 0
 EXT-PWM
 $Comp
-L psmn1:PSMN1 Q2
+L PSMN1 Q2
 U 1 1 59EC386E
 P 2250 4650
 F 0 "Q2" H 2450 4700 50  0000 L CNN
@@ -625,7 +681,7 @@ F 3 "" H 2250 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D7
+L LED D7
 U 1 1 59EC3874
 P 2350 4050
 F 0 "D7" H 2350 4150 50  0000 C CNN
@@ -636,11 +692,9 @@ F 3 "" H 2350 4050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R R33
+L R R33
 U 1 1 59EC387A
 P 2350 3650
-AR Path="/59EC387A" Ref="R33"  Part="1" 
-AR Path="/59EA5ED5/59EC387A" Ref="R33"  Part="1" 
 F 0 "R33" V 2430 3650 50  0000 C CNN
 F 1 "1.8K" V 2350 3650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2280 3650 50  0001 C CNN
@@ -649,7 +703,7 @@ F 3 "" H 2350 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D5
+L D_Schottky D5
 U 1 1 59EC3886
 P 2100 3850
 F 0 "D5" H 2100 3950 50  0000 C CNN
@@ -679,10 +733,10 @@ Wire Wire Line
 Wire Wire Line
 	2350 4950 2350 4900
 $Comp
-L power:GND #PWR0117
+L GND #PWR117
 U 1 1 59EC3896
 P 2350 4950
-F 0 "#PWR0117" H 2350 4700 50  0001 C CNN
+F 0 "#PWR117" H 2350 4700 50  0001 C CNN
 F 1 "GND" H 2350 4800 50  0000 C CNN
 F 2 "" H 2350 4950 50  0001 C CNN
 F 3 "" H 2350 4950 50  0001 C CNN
@@ -690,11 +744,9 @@ F 3 "" H 2350 4950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R29
+L R R29
 U 1 1 59EC389C
 P 1650 4650
-AR Path="/59EC389C" Ref="R29"  Part="1" 
-AR Path="/59EA5ED5/59EC389C" Ref="R29"  Part="1" 
 F 0 "R29" V 1730 4650 50  0000 C CNN
 F 1 "100" V 1650 4650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 1580 4650 50  0001 C CNN
@@ -703,11 +755,9 @@ F 3 "" H 1650 4650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R31
+L R R31
 U 1 1 59EC38A2
 P 2100 4900
-AR Path="/59EC38A2" Ref="R31"  Part="1" 
-AR Path="/59EA5ED5/59EC38A2" Ref="R31"  Part="1" 
 F 0 "R31" V 2180 4900 50  0000 C CNN
 F 1 "100K" V 2100 4900 50  0000 C CNN
 F 2 "Resistors_SMD:R_0603" V 2030 4900 50  0001 C CNN
@@ -724,12 +774,10 @@ Wire Wire Line
 	1950 4650 1950 4900
 Connection ~ 1950 4650
 $Comp
-L power:VBUS #PWR116
+L VBUS #PWR116
 U 1 1 59EC3DE5
 P 2350 3400
-AR Path="/59EC3DE5" Ref="#PWR116"  Part="1" 
-AR Path="/59EA5ED5/59EC3DE5" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 2350 3250 50  0001 C CNN
+F 0 "#PWR116" H 2350 3250 50  0001 C CNN
 F 1 "VBUS" H 2350 3550 50  0000 C CNN
 F 2 "" H 2350 3400 50  0001 C CNN
 F 3 "" H 2350 3400 50  0001 C CNN
@@ -740,7 +788,7 @@ Connection ~ 2100 3500
 Wire Wire Line
 	1700 3600 1700 4200
 $Comp
-L Device:D_Schottky_x2_Serial_AKC D10
+L D_Schottky_x2_Serial_AKC D10
 U 1 1 59F5BB09
 P 10650 2800
 F 0 "D10" H 10700 2700 50  0000 C CNN
@@ -764,7 +812,7 @@ Wire Wire Line
 Wire Wire Line
 	9950 2400 10650 2400
 $Comp
-L Device:D_Schottky_x2_Serial_AKC D11
+L D_Schottky_x2_Serial_AKC D11
 U 1 1 59F5C8FB
 P 10650 5850
 F 0 "D11" H 10700 5750 50  0000 C CNN
@@ -782,7 +830,7 @@ Wire Wire Line
 	10650 5350 10650 5550
 Connection ~ 10200 5350
 $Comp
-L Connector_Specialized:Screw_Terminal_01x02 J8
+L Screw_Terminal_01x02 J8
 U 1 1 5A001F35
 P 1500 3600
 F 0 "J8" H 1500 3700 50  0000 C CNN
