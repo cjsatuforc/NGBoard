@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 6 9
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L schematic-rescue:Conn_01x06 J6
+L Connector_Generic:Conn_01x06 J6
 U 1 1 59E95CC2
 P 1750 3700
 F 0 "J6" H 1750 4000 50  0000 C CNN
@@ -48,45 +48,45 @@ F 3 "" H 2200 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C63
+L Device:C C63
 U 1 1 59E95E17
 P 2500 3100
 F 0 "C63" H 2525 3200 50  0000 L CNN
 F 1 "100nF" H 2525 3000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2538 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 2950 50  0001 C CNN
 F 3 "" H 2500 3100 50  0001 C CNN
 	1    2500 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C66
+L Device:C C66
 U 1 1 59E95E54
 P 3250 3100
 F 0 "C66" H 3275 3200 50  0000 L CNN
 F 1 "100nF" H 3275 3000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3288 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 2950 50  0001 C CNN
 F 3 "" H 3250 3100 50  0001 C CNN
 	1    3250 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C70
+L Device:C C70
 U 1 1 59E95E80
 P 4300 3100
 F 0 "C70" H 4325 3200 50  0000 L CNN
 F 1 "100nF" H 4325 3000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4338 2950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4338 2950 50  0001 C CNN
 F 3 "" H 4300 3100 50  0001 C CNN
 	1    4300 3100
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:L_Core_Ferrite L18
+L Device:L_Core_Ferrite L18
 U 1 1 59E95EA3
 P 2900 2850
 F 0 "L18" V 2850 2850 50  0000 C CNN
 F 1 "60R" V 3010 2850 50  0000 C CNN
-F 2 "Inductors_SMD:L_1806" H 2900 2850 50  0001 C CNN
+F 2 "Inductor_SMD:L_1806_4516Metric" H 2900 2850 50  0001 C CNN
 F 3 "" H 2900 2850 50  0001 C CNN
 F 4 " 188-8665" V 2900 2850 60  0001 C CNN "RS"
 	1    2900 2850
@@ -126,7 +126,7 @@ F 3 "" H 4300 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:Fuse F3
+L Device:Fuse F3
 U 1 1 59E95F8D
 P 3550 2850
 F 0 "F3" V 3630 2850 50  0000 C CNN
@@ -137,12 +137,12 @@ F 3 "" H 3550 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:D_Schottky D3
+L Device:D_Schottky D3
 U 1 1 59E96009
 P 3950 3150
 F 0 "D3" H 3950 3250 50  0000 C CNN
 F 1 "SMAJ24A" H 3950 3050 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 3950 3150 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 3950 3150 50  0001 C CNN
 F 3 "" H 3950 3150 50  0001 C CNN
 	1    3950 3150
 	0    1    1    0   
@@ -159,34 +159,34 @@ F 3 "" H 3950 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C62
+L Device:C C62
 U 1 1 59E9650E
 P 2500 2050
 F 0 "C62" H 2525 2150 50  0000 L CNN
 F 1 "100nF" H 2525 1950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2538 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 1900 50  0001 C CNN
 F 3 "" H 2500 2050 50  0001 C CNN
 	1    2500 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C65
+L Device:C C65
 U 1 1 59E96514
 P 3250 2050
 F 0 "C65" H 3275 2150 50  0000 L CNN
 F 1 "100nF" H 3275 1950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3288 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 1900 50  0001 C CNN
 F 3 "" H 3250 2050 50  0001 C CNN
 	1    3250 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:L_Core_Ferrite L17
+L Device:L_Core_Ferrite L17
 U 1 1 59E96520
 P 2900 1800
 F 0 "L17" V 2850 1800 50  0000 C CNN
 F 1 "60R" V 3010 1800 50  0000 C CNN
-F 2 "Inductors_SMD:L_1806" H 2900 1800 50  0001 C CNN
+F 2 "Inductor_SMD:L_1806_4516Metric" H 2900 1800 50  0001 C CNN
 F 3 "" H 2900 1800 50  0001 C CNN
 F 4 " 188-8665" V 2900 1800 60  0001 C CNN "RS"
 	1    2900 1800
@@ -226,7 +226,7 @@ F 3 "" H 4300 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:Fuse F2
+L Device:Fuse F2
 U 1 1 59E9653C
 P 3550 1800
 F 0 "F2" V 3630 1800 50  0000 C CNN
@@ -237,12 +237,12 @@ F 3 "" H 3550 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:D_Schottky D2
+L Device:D_Schottky D2
 U 1 1 59E96543
 P 3950 2050
 F 0 "D2" H 3950 2150 50  0000 C CNN
 F 1 "SMAJ24A" H 3950 1950 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 3950 2050 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 3950 2050 50  0001 C CNN
 F 3 "" H 3950 2050 50  0001 C CNN
 	1    3950 2050
 	0    1    1    0   
@@ -259,23 +259,23 @@ F 3 "" H 3950 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:CP C69
+L Device:CP C69
 U 1 1 59E96655
 P 4300 2050
 F 0 "C69" H 4325 2150 50  0000 L CNN
 F 1 "100uF" H 4325 1950 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_8x10" H 4338 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 4338 1900 50  0001 C CNN
 F 3 "" H 4300 2050 50  0001 C CNN
 	1    4300 2050
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C71
+L Device:C C71
 U 1 1 59E966CE
 P 4650 2050
 F 0 "C71" H 4675 2150 50  0000 L CNN
 F 1 "100nF" H 4675 1950 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 4688 1900 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4688 1900 50  0001 C CNN
 F 3 "" H 4650 2050 50  0001 C CNN
 	1    4650 2050
 	1    0    0    -1  
@@ -303,18 +303,18 @@ F 3 "" H 4300 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C64
+L Device:C C64
 U 1 1 59EA3E2E
 P 2500 3950
 F 0 "C64" H 2525 4050 50  0000 L CNN
 F 1 "100nF" H 2525 3850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 2538 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2538 3800 50  0001 C CNN
 F 3 "" H 2500 3950 50  0001 C CNN
 	1    2500 3950
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:Fuse F1
+L Device:Fuse F1
 U 1 1 59EA3EAB
 P 2750 3700
 F 0 "F1" V 2830 3700 50  0000 C CNN
@@ -325,34 +325,34 @@ F 3 "" H 2750 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:D_Schottky D1
+L Device:D_Schottky D1
 U 1 1 59EA3F05
 P 3100 3950
 F 0 "D1" H 3100 4050 50  0000 C CNN
 F 1 "SMAJ24A" H 3100 3850 50  0000 C CNN
-F 2 "Diodes_SMD:D_SMA" H 3100 3950 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 3100 3950 50  0001 C CNN
 F 3 "" H 3100 3950 50  0001 C CNN
 	1    3100 3950
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:C C67
+L Device:C C67
 U 1 1 59EA3F6C
 P 3400 3950
 F 0 "C67" H 3425 4050 50  0000 L CNN
 F 1 "100nF" H 3425 3850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 3438 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3438 3800 50  0001 C CNN
 F 3 "" H 3400 3950 50  0001 C CNN
 	1    3400 3950
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:CP C68
+L Device:CP C68
 U 1 1 59EA3FD4
 P 3750 3950
 F 0 "C68" H 3775 4050 50  0000 L CNN
 F 1 "100uF" H 3775 3850 50  0000 L CNN
-F 2 "Capacitors_SMD:CP_Elec_8x10" H 3788 3800 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_8x10" H 3788 3800 50  0001 C CNN
 F 3 "" H 3750 3950 50  0001 C CNN
 	1    3750 3950
 	1    0    0    -1  
@@ -415,56 +415,56 @@ F 3 "" H 7300 2450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C75
+L Device:C C75
 U 1 1 59EAAABB
 P 6500 2250
 F 0 "C75" H 6525 2350 50  0000 L CNN
 F 1 "100nF" H 6525 2150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6538 2100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 2100 50  0001 C CNN
 F 3 "" H 6500 2250 50  0001 C CNN
 	1    6500 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C72
+L Device:C C72
 U 1 1 59EAAB1E
 P 6250 2250
 F 0 "C72" H 6275 2350 50  0000 L CNN
 F 1 "10uF" H 6275 2150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6288 2100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6288 2100 50  0001 C CNN
 F 3 "" H 6250 2250 50  0001 C CNN
 	1    6250 2250
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C78
+L Device:C C78
 U 1 1 59EAAB69
 P 6800 1600
 F 0 "C78" H 6825 1700 50  0000 L CNN
 F 1 "100nF" H 6825 1500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6838 1450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6838 1450 50  0001 C CNN
 F 3 "" H 6800 1600 50  0001 C CNN
 	1    6800 1600
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C87
+L Device:C C87
 U 1 1 59EAABD0
 P 8600 2100
 F 0 "C87" H 8625 2200 50  0000 L CNN
 F 1 "22uF" H 8625 2000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8638 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8638 1950 50  0001 C CNN
 F 3 "" H 8600 2100 50  0001 C CNN
 	1    8600 2100
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C81
+L Device:C C81
 U 1 1 59EAAF77
 P 8100 2250
 F 0 "C81" H 8125 2350 50  0000 L CNN
 F 1 "6800pF" H 8125 2150 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8138 2100 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8138 2100 50  0001 C CNN
 F 3 "" H 8100 2250 50  0001 C CNN
 	1    8100 2250
 	0    -1   -1   0   
@@ -525,45 +525,45 @@ F 3 "" H 8600 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:L L19
+L Device:L L19
 U 1 1 59EAB228
 P 8150 1950
 F 0 "L19" V 8100 1950 50  0000 C CNN
 F 1 "4.7uH" V 8225 1950 50  0000 C CNN
-F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 1950 50  0001 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 1950 50  0001 C CNN
 F 3 "" H 8150 1950 50  0001 C CNN
 	1    8150 1950
 	0    -1   -1   0   
 $EndComp
 $Comp
-L schematic-rescue:R R19
+L Device:R R19
 U 1 1 59EAB4EB
 P 7900 2600
 F 0 "R19" V 7980 2600 50  0000 C CNN
 F 1 "19.1K" V 7900 2600 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7830 2600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 2600 50  0001 C CNN
 F 3 "" H 7900 2600 50  0001 C CNN
 	1    7900 2600
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:R R22
+L Device:R R22
 U 1 1 59EAB586
 P 8150 1700
 F 0 "R22" V 8230 1700 50  0000 C CNN
 F 1 "100K" V 8150 1700 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8080 1700 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 1700 50  0001 C CNN
 F 3 "" H 8150 1700 50  0001 C CNN
 	1    8150 1700
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:C C90
+L Device:C C90
 U 1 1 59EAB87A
 P 8850 2100
 F 0 "C90" H 8875 2200 50  0000 L CNN
 F 1 "22uF" H 8875 2000 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8888 1950 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8888 1950 50  0001 C CNN
 F 3 "" H 8850 2100 50  0001 C CNN
 	1    8850 2100
 	1    0    0    -1  
@@ -591,12 +591,12 @@ F 3 "" H 6250 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C84
+L Device:C C84
 U 1 1 59EACE2B
 P 8150 1400
 F 0 "C84" H 8175 1500 50  0000 L CNN
 F 1 "18pF" H 8175 1300 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8188 1250 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 1250 50  0001 C CNN
 F 3 "" H 8150 1400 50  0001 C CNN
 	1    8150 1400
 	0    1    1    0   
@@ -606,53 +606,53 @@ Wire Wire Line
 Wire Wire Line
 	1950 3800 2200 3800
 Wire Wire Line
-	1950 1800 1950 3500
+	1950 1800 1950 2850
 Wire Wire Line
-	1950 2850 2750 2850
+	1950 2850 2500 2850
 Wire Wire Line
 	2500 2950 2500 2850
 Connection ~ 2500 2850
 Wire Wire Line
-	3050 2850 3400 2850
+	3050 2850 3250 2850
 Wire Wire Line
 	3250 2850 3250 2950
 Connection ~ 3250 2850
 Wire Wire Line
-	3700 2850 4300 2850
+	3700 2850 3950 2850
 Wire Wire Line
 	3950 2850 3950 3000
 Wire Wire Line
-	4300 2700 4300 2950
+	4300 2700 4300 2850
 Connection ~ 3950 2850
 Connection ~ 4300 2850
 Wire Wire Line
-	1950 1800 2750 1800
+	1950 1800 2500 1800
 Wire Wire Line
 	2500 1900 2500 1800
 Connection ~ 2500 1800
 Wire Wire Line
-	3050 1800 3400 1800
+	3050 1800 3250 1800
 Wire Wire Line
 	3250 1800 3250 1900
 Connection ~ 3250 1800
 Wire Wire Line
-	3700 1800 4650 1800
+	3700 1800 3950 1800
 Wire Wire Line
 	3950 1800 3950 1900
 Wire Wire Line
-	4300 1650 4300 1900
+	4300 1650 4300 1800
 Connection ~ 3950 1800
 Connection ~ 4300 1800
 Connection ~ 1950 2850
 Wire Wire Line
 	4650 1800 4650 1900
 Wire Wire Line
-	1950 3700 2600 3700
+	1950 3700 2500 3700
 Wire Wire Line
 	2500 3800 2500 3700
 Connection ~ 2500 3700
 Wire Wire Line
-	2900 3700 4000 3700
+	2900 3700 3100 3700
 Wire Wire Line
 	3100 3700 3100 3800
 Wire Wire Line
@@ -668,37 +668,37 @@ Wire Wire Line
 Wire Wire Line
 	2300 4350 4000 4350
 Wire Wire Line
-	4000 4350 4000 3650
+	4000 4350 4000 3700
 Connection ~ 3750 3700
 Wire Wire Line
 	1950 4000 2150 4000
 Wire Wire Line
 	2150 4000 2150 4200
 Wire Wire Line
-	6250 2100 6800 2100
+	6250 2100 6500 2100
 Connection ~ 6500 2100
 Wire Wire Line
 	6800 2100 6800 2250
 Wire Wire Line
 	8600 2250 8600 2750
 Wire Wire Line
-	8300 1950 8850 1950
+	8300 1950 8600 1950
 Wire Wire Line
 	7800 1950 8000 1950
 Wire Wire Line
 	7900 2400 7800 2400
 Wire Wire Line
-	7900 1400 7900 2450
+	7900 1400 7900 1700
 Wire Wire Line
 	7900 1700 8000 1700
 Connection ~ 7900 2400
 Wire Wire Line
 	8300 1700 8600 1700
 Wire Wire Line
-	8600 1400 8600 1950
+	8600 1400 8600 1700
 Connection ~ 8600 1950
 Wire Wire Line
-	8450 2250 8850 2250
+	8450 2250 8600 2250
 Wire Wire Line
 	6250 2400 6500 2400
 Wire Wire Line
@@ -738,12 +738,12 @@ F 3 "" H 8850 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:R R25
+L Device:R R25
 U 1 1 59EAD3D1
 P 8350 2500
 F 0 "R25" V 8430 2500 50  0000 C CNN
 F 1 "10K" V 8350 2500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8280 2500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 2500 50  0001 C CNN
 F 3 "" H 8350 2500 50  0001 C CNN
 	1    8350 2500
 	1    0    0    -1  
@@ -772,56 +772,56 @@ F 3 "" H 7300 4200 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C76
+L Device:C C76
 U 1 1 59EAE445
 P 6500 4000
 F 0 "C76" H 6525 4100 50  0000 L CNN
 F 1 "100nF" H 6525 3900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6538 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 3850 50  0001 C CNN
 F 3 "" H 6500 4000 50  0001 C CNN
 	1    6500 4000
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C73
+L Device:C C73
 U 1 1 59EAE44B
 P 6250 4000
 F 0 "C73" H 6275 4100 50  0000 L CNN
 F 1 "10uF" H 6275 3900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6288 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6288 3850 50  0001 C CNN
 F 3 "" H 6250 4000 50  0001 C CNN
 	1    6250 4000
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C79
+L Device:C C79
 U 1 1 59EAE451
 P 6800 3350
 F 0 "C79" H 6825 3450 50  0000 L CNN
 F 1 "100nF" H 6825 3250 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6838 3200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6838 3200 50  0001 C CNN
 F 3 "" H 6800 3350 50  0001 C CNN
 	1    6800 3350
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C88
+L Device:C C88
 U 1 1 59EAE457
 P 8600 3850
 F 0 "C88" H 8625 3950 50  0000 L CNN
 F 1 "22uF" H 8625 3750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8638 3700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8638 3700 50  0001 C CNN
 F 3 "" H 8600 3850 50  0001 C CNN
 	1    8600 3850
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C82
+L Device:C C82
 U 1 1 59EAE45D
 P 8100 4000
 F 0 "C82" H 8125 4100 50  0000 L CNN
 F 1 "6800pF" H 8125 3900 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8138 3850 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8138 3850 50  0001 C CNN
 F 3 "" H 8100 4000 50  0001 C CNN
 	1    8100 4000
 	0    -1   -1   0   
@@ -882,45 +882,45 @@ F 3 "" H 8600 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:L L20
+L Device:L L20
 U 1 1 59EAE481
 P 8150 3700
 F 0 "L20" V 8100 3700 50  0000 C CNN
 F 1 "3.3uH" V 8225 3700 50  0000 C CNN
-F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 3700 50  0001 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 3700 50  0001 C CNN
 F 3 "" H 8150 3700 50  0001 C CNN
 	1    8150 3700
 	0    -1   -1   0   
 $EndComp
 $Comp
-L schematic-rescue:R R20
+L Device:R R20
 U 1 1 59EAE487
 P 7900 4350
 F 0 "R20" V 7980 4350 50  0000 C CNN
 F 1 "32K" V 7900 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7830 4350 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 4350 50  0001 C CNN
 F 3 "" H 7900 4350 50  0001 C CNN
 	1    7900 4350
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:R R23
+L Device:R R23
 U 1 1 59EAE48D
 P 8150 3450
 F 0 "R23" V 8230 3450 50  0000 C CNN
 F 1 "100K" V 8150 3450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8080 3450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 3450 50  0001 C CNN
 F 3 "" H 8150 3450 50  0001 C CNN
 	1    8150 3450
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:C C91
+L Device:C C91
 U 1 1 59EAE493
 P 8850 3850
 F 0 "C91" H 8875 3950 50  0000 L CNN
 F 1 "22uF" H 8875 3750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8888 3700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8888 3700 50  0001 C CNN
 F 3 "" H 8850 3850 50  0001 C CNN
 	1    8850 3850
 	1    0    0    -1  
@@ -948,41 +948,41 @@ F 3 "" H 6250 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C85
+L Device:C C85
 U 1 1 59EAE4A5
 P 8150 3150
 F 0 "C85" H 8175 3250 50  0000 L CNN
 F 1 "100pF" H 8175 3050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8188 3000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 3000 50  0001 C CNN
 F 3 "" H 8150 3150 50  0001 C CNN
 	1    8150 3150
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6250 3850 6800 3850
+	6250 3850 6500 3850
 Connection ~ 6500 3850
 Wire Wire Line
 	6800 3850 6800 4000
 Wire Wire Line
 	8600 4000 8600 4500
 Wire Wire Line
-	8300 3700 8850 3700
+	8300 3700 8600 3700
 Wire Wire Line
 	7800 3700 8000 3700
 Wire Wire Line
 	7900 4150 7800 4150
 Wire Wire Line
-	7900 3150 7900 4200
+	7900 3150 7900 3450
 Wire Wire Line
 	7900 3450 8000 3450
 Connection ~ 7900 4150
 Wire Wire Line
 	8300 3450 8600 3450
 Wire Wire Line
-	8600 3150 8600 3700
+	8600 3150 8600 3450
 Connection ~ 8600 3700
 Wire Wire Line
-	8450 4000 8850 4000
+	8450 4000 8600 4000
 Wire Wire Line
 	6250 4150 6500 4150
 Wire Wire Line
@@ -1011,12 +1011,12 @@ Wire Wire Line
 	8300 3150 8600 3150
 Connection ~ 8600 3450
 $Comp
-L schematic-rescue:R R26
+L Device:R R26
 U 1 1 59EAE4D0
 P 8350 4250
 F 0 "R26" V 8430 4250 50  0000 C CNN
 F 1 "10K" V 8350 4250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8280 4250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 4250 50  0001 C CNN
 F 3 "" H 8350 4250 50  0001 C CNN
 	1    8350 4250
 	1    0    0    -1  
@@ -1056,56 +1056,56 @@ F 3 "" H 7300 6000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C77
+L Device:C C77
 U 1 1 59EB00C8
 P 6500 5800
 F 0 "C77" H 6525 5900 50  0000 L CNN
 F 1 "100nF" H 6525 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6538 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6538 5650 50  0001 C CNN
 F 3 "" H 6500 5800 50  0001 C CNN
 	1    6500 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C74
+L Device:C C74
 U 1 1 59EB00CE
 P 6250 5800
 F 0 "C74" H 6275 5900 50  0000 L CNN
 F 1 "10uF" H 6275 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 6288 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 6288 5650 50  0001 C CNN
 F 3 "" H 6250 5800 50  0001 C CNN
 	1    6250 5800
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C80
+L Device:C C80
 U 1 1 59EB00D4
 P 6800 5150
 F 0 "C80" H 6825 5250 50  0000 L CNN
 F 1 "100nF" H 6825 5050 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 6838 5000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6838 5000 50  0001 C CNN
 F 3 "" H 6800 5150 50  0001 C CNN
 	1    6800 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C89
+L Device:C C89
 U 1 1 59EB00DA
 P 8600 5650
 F 0 "C89" H 8625 5750 50  0000 L CNN
 F 1 "22uF" H 8625 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8638 5500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8638 5500 50  0001 C CNN
 F 3 "" H 8600 5650 50  0001 C CNN
 	1    8600 5650
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:C C83
+L Device:C C83
 U 1 1 59EB00E0
 P 8100 5800
 F 0 "C83" H 8125 5900 50  0000 L CNN
 F 1 "6800pF" H 8125 5700 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8138 5650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8138 5650 50  0001 C CNN
 F 3 "" H 8100 5800 50  0001 C CNN
 	1    8100 5800
 	0    -1   -1   0   
@@ -1166,45 +1166,45 @@ F 3 "" H 8600 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:L L21
+L Device:L L21
 U 1 1 59EB0104
 P 8150 5500
 F 0 "L21" V 8100 5500 50  0000 C CNN
 F 1 "3.3uH" V 8225 5500 50  0000 C CNN
-F 2 "Inductors_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 5500 50  0001 C CNN
+F 2 "Inductor_SMD:L_Taiyo-Yuden_NR-60xx" H 8150 5500 50  0001 C CNN
 F 3 "" H 8150 5500 50  0001 C CNN
 	1    8150 5500
 	0    -1   -1   0   
 $EndComp
 $Comp
-L schematic-rescue:R R21
+L Device:R R21
 U 1 1 59EB010A
 P 7900 6150
 F 0 "R21" V 7980 6150 50  0000 C CNN
 F 1 "7.15K" V 7900 6150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 7830 6150 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7830 6150 50  0001 C CNN
 F 3 "" H 7900 6150 50  0001 C CNN
 	1    7900 6150
 	1    0    0    -1  
 $EndComp
 $Comp
-L schematic-rescue:R R24
+L Device:R R24
 U 1 1 59EB0110
 P 8150 5250
 F 0 "R24" V 8230 5250 50  0000 C CNN
 F 1 "100K" V 8150 5250 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8080 5250 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8080 5250 50  0001 C CNN
 F 3 "" H 8150 5250 50  0001 C CNN
 	1    8150 5250
 	0    1    1    0   
 $EndComp
 $Comp
-L schematic-rescue:C C92
+L Device:C C92
 U 1 1 59EB0116
 P 8850 5650
 F 0 "C92" H 8875 5750 50  0000 L CNN
 F 1 "22uF" H 8875 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_1206" H 8888 5500 50  0001 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 8888 5500 50  0001 C CNN
 F 3 "" H 8850 5650 50  0001 C CNN
 	1    8850 5650
 	1    0    0    -1  
@@ -1232,41 +1232,41 @@ F 3 "" H 6400 5200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L schematic-rescue:C C86
+L Device:C C86
 U 1 1 59EB0128
 P 8150 4950
 F 0 "C86" H 8175 5050 50  0000 L CNN
 F 1 "100pF" H 8175 4850 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8188 4800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8188 4800 50  0001 C CNN
 F 3 "" H 8150 4950 50  0001 C CNN
 	1    8150 4950
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	6250 5650 6800 5650
+	6250 5650 6300 5650
 Connection ~ 6500 5650
 Wire Wire Line
 	6800 5650 6800 5800
 Wire Wire Line
 	8600 5800 8600 6300
 Wire Wire Line
-	8300 5500 8850 5500
+	8300 5500 8600 5500
 Wire Wire Line
 	7800 5500 8000 5500
 Wire Wire Line
 	7900 5950 7800 5950
 Wire Wire Line
-	7900 4950 7900 6000
+	7900 4950 7900 5250
 Wire Wire Line
 	7900 5250 8000 5250
 Connection ~ 7900 5950
 Wire Wire Line
 	8600 5250 8300 5250
 Wire Wire Line
-	8600 4800 8600 5500
+	8600 4800 8600 4950
 Connection ~ 8600 5500
 Wire Wire Line
-	8450 5800 8850 5800
+	8450 5800 8600 5800
 Wire Wire Line
 	6250 5950 6500 5950
 Wire Wire Line
@@ -1292,12 +1292,12 @@ Wire Wire Line
 	8300 4950 8600 4950
 Connection ~ 8600 5250
 $Comp
-L schematic-rescue:R R27
+L Device:R R27
 U 1 1 59EB014D
 P 8350 6050
 F 0 "R27" V 8430 6050 50  0000 C CNN
 F 1 "10K" V 8350 6050 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V 8280 6050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8280 6050 50  0001 C CNN
 F 3 "" H 8350 6050 50  0001 C CNN
 	1    8350 6050
 	1    0    0    -1  
@@ -1315,7 +1315,7 @@ Wire Wire Line
 Wire Wire Line
 	8450 5650 8450 5800
 $Comp
-L schematic-rescue:Conn_01x03 J7
+L Connector_Generic:Conn_01x03 J7
 U 1 1 59EB0A5A
 P 6400 4900
 F 0 "J7" H 6400 5100 50  0000 C CNN
@@ -1376,4 +1376,74 @@ F 3 "" H 4300 2700 50  0001 C CNN
 	1    4300 2700
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2500 2850 2750 2850
+Wire Wire Line
+	3250 2850 3400 2850
+Wire Wire Line
+	3950 2850 4300 2850
+Wire Wire Line
+	4300 2850 4300 2950
+Wire Wire Line
+	2500 1800 2750 1800
+Wire Wire Line
+	3250 1800 3400 1800
+Wire Wire Line
+	3950 1800 4300 1800
+Wire Wire Line
+	4300 1800 4300 1900
+Wire Wire Line
+	4300 1800 4650 1800
+Wire Wire Line
+	1950 2850 1950 3500
+Wire Wire Line
+	2500 3700 2600 3700
+Wire Wire Line
+	3100 3700 3400 3700
+Wire Wire Line
+	3400 3700 3750 3700
+Wire Wire Line
+	3750 3700 4000 3700
+Wire Wire Line
+	6500 2100 6800 2100
+Wire Wire Line
+	7900 2400 7900 2450
+Wire Wire Line
+	8600 1950 8850 1950
+Wire Wire Line
+	8600 2250 8850 2250
+Wire Wire Line
+	7900 1700 7900 2400
+Wire Wire Line
+	8600 1700 8600 1950
+Wire Wire Line
+	6500 3850 6800 3850
+Wire Wire Line
+	7900 4150 7900 4200
+Wire Wire Line
+	8600 3700 8850 3700
+Wire Wire Line
+	8600 4000 8850 4000
+Wire Wire Line
+	7900 3450 7900 4150
+Wire Wire Line
+	8600 3450 8600 3700
+Wire Wire Line
+	6500 5650 6800 5650
+Wire Wire Line
+	7900 5950 7900 6000
+Wire Wire Line
+	8600 5500 8850 5500
+Wire Wire Line
+	8600 5800 8850 5800
+Wire Wire Line
+	7900 5250 7900 5950
+Wire Wire Line
+	8600 5250 8600 5500
+Wire Wire Line
+	6300 5650 6500 5650
+Wire Wire Line
+	8600 4950 8600 5250
+Wire Wire Line
+	4000 3700 4000 3650
 $EndSCHEMATC

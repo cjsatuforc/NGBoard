@@ -3,4 +3,5 @@
   (lib (name bd9e302efj)(type Legacy)(uri ${KIPRJMOD}/bd9e302efj.lib)(options "")(descr ""))
   (lib (name psmn1)(type Legacy)(uri ${KIPRJMOD}/psmn1.lib)(options "")(descr ""))
   (lib (name tmc2130)(type Legacy)(uri ${KIPRJMOD}/tmc2130.lib)(options "")(descr ""))
+  (lib (name l6470)(type Legacy)(uri /media/data/git/NGBoard/schematic/l6470.lib)(options "")(descr ""))
 )
